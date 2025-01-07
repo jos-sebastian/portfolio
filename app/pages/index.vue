@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div></div>
+  <div class="grow"></div>
 </template>
 
 <style></style>
