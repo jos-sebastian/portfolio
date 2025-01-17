@@ -3,6 +3,7 @@
 <template>
   <div>
     <SectionEducation />
+    <SectionExperience />
   </div>
 </template>
 
