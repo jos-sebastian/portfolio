@@ -4,6 +4,7 @@
   <div>
     <SectionEducation />
     <SectionExperience />
+    <SectionSkills />
   </div>
 </template>
 
