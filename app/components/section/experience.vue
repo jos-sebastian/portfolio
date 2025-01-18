@@ -35,13 +35,14 @@ const experiences: Experience[] = [
         v-for="experience in experiences"
         :key="experience.company + experience.position"
       >
-        <div class="text-xs uppercase font-bold">
+        <div class="text-xs font-bold uppercase">
           {{ experience.time.start }} - {{ experience.time.end }}
         </div>
 
-        <div class="font-bold">
-          {{ experience.position }} · {{ experience.company }}
-        </div>
+        <span class="font-bold">{{ experience.position }}</span>
+        <span> · </span>
+        <span class="inline-block italic">{{ experience.company }}</span>
+
         <div>
           <div v-for="description in experience.description" :key="description">
             {{ description }}

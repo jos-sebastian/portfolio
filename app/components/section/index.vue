@@ -6,10 +6,7 @@ const { title } = defineProps<{
 
 <template>
   <div class="flex flex-col">
-    <h3
-      v-if="title"
-      class="px-0 py-3 bg-[var(--ui-bg)] sticky top-0 uppercase font-bold"
-    >
+    <h3 v-if="title" class="top-0 px-0 py-3 font-bold uppercase">
       {{ title }}
     </h3>
 

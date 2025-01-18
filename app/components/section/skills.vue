@@ -6,7 +6,7 @@ type Skill = {
 
 const skills: Skill[] = [
   {
-    skill: "C++",
+    skill: "C/C++",
     subskills: ["OpenGL", "GLSL", "Vulkan", "CUDA"],
   },
   {
@@ -44,12 +44,14 @@ const skills: Skill[] = [
   <Section title="Skills">
     <div class="flex flex-col gap-1.5">
       <div v-for="skill in skills" :key="skill.skill">
-        <div class="font-bold">{{ skill.skill }}</div>
-        <div class="flex flex-wrap gap-1.5">
-          <div v-for="subskill in skill.subskills" :key="subskill">
-            {{ subskill }}
-          </div>
-        </div>
+        <span class="font-bold">{{ skill.skill }}</span>
+        <span v-if="skill.subskills.length"> · </span>
+        <span>
+          <span v-for="subskill in skill.subskills" :key="subskill">
+            <span v-if="subskill !== skill.subskills[0]">, </span>
+            <span>{{ subskill }}</span>
+          </span>
+        </span>
       </div>
     </div>
   </Section>

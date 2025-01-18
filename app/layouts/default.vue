@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="max-w-dvw min-h-dvh flex">
+  <div class="flex min-h-dvh max-w-dvw">
     <slot />
   </div>
 </template>
