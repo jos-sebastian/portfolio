@@ -1,37 +1,43 @@
 <script lang="ts" setup>
 type Education = {
-  school: string;
-  degree: string;
-  discipline: string;
   time: {
     start: string;
     end: string;
   };
+  degree: string;
+  discipline: string;
+  school: string;
 };
 
 const educations: Education[] = [
   {
-    school: "Texas A&M University",
-    degree: "Bachelor of Science",
-    discipline: "Computer Engineering",
     time: {
       start: "August 2021",
       end: "May 2025",
     },
+    degree: "Bachelor of Science",
+    discipline: "Computer Engineering",
+    school: "Texas A&M University",
   },
 ];
 </script>
 
 <template>
   <Section title="Education">
-    <div>
+    <div class="flex flex-col gap-1.5">
       <div
         v-for="education in educations"
         :key="education.school + education.degree + education.discipline"
       >
-        <div>{{ education.school }}</div>
-        <div>{{ education.degree }} in {{ education.discipline }}</div>
-        <div>{{ education.time.start }} - {{ education.time.end }}</div>
+        <div class="text-xs uppercase font-bold">
+          {{ education.time.start }} - {{ education.time.end }}
+        </div>
+
+        <div class="font-bold">
+          {{ education.degree }} in {{ education.discipline }}
+          ·
+          {{ education.school }}
+        </div>
       </div>
     </div>
   </Section>

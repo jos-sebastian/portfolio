@@ -42,10 +42,10 @@ const skills: Skill[] = [
 
 <template>
   <Section title="Skills">
-    <div>
+    <div class="flex flex-col gap-1.5">
       <div v-for="skill in skills" :key="skill.skill">
-        <div>{{ skill.skill }}</div>
-        <div>
+        <div class="font-bold">{{ skill.skill }}</div>
+        <div class="flex flex-wrap gap-1.5">
           <div v-for="subskill in skill.subskills" :key="subskill">
             {{ subskill }}
           </div>

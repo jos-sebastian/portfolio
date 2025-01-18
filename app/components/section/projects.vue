@@ -40,9 +40,9 @@ const projects: Project[] = [
 
 <template>
   <Section title="Projects">
-    <div>
+    <div class="flex flex-col gap-1.5">
       <div v-for="project in projects" :key="project.project">
-        <div>{{ project.project }}</div>
+        <div class="font-bold">{{ project.project }}</div>
         <div>
           <div v-for="description in project.description" :key="description">
             {{ description }}

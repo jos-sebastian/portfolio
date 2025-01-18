@@ -1,22 +1,22 @@
 <script lang="ts" setup>
 type Experience = {
-  company: string;
-  position: string;
   time: {
     start: string;
     end: string;
   };
+  position: string;
+  company: string;
   description: string[];
 };
 
 const experiences: Experience[] = [
   {
-    company: "Texas A&M University",
-    position: "Mathematics Tutor",
     time: {
       start: "August 2021",
       end: "May 2025",
     },
+    position: "Mathematics Tutor",
+    company: "Texas A&M University",
     description: [
       "Facilitated student mastery of mathematics by tutoring on topics ranging from algebra to calculus.",
       "Enhanced learning outcomes through customized lesson plans tailored to individual student goals.",
@@ -30,14 +30,18 @@ const experiences: Experience[] = [
 
 <template>
   <Section title="Experience">
-    <div>
+    <div class="flex flex-col gap-1.5">
       <div
         v-for="experience in experiences"
         :key="experience.company + experience.position"
       >
-        <div>{{ experience.company }}</div>
-        <div>{{ experience.position }}</div>
-        <div>{{ experience.time.start }} - {{ experience.time.end }}</div>
+        <div class="text-xs uppercase font-bold">
+          {{ experience.time.start }} - {{ experience.time.end }}
+        </div>
+
+        <div class="font-bold">
+          {{ experience.position }} · {{ experience.company }}
+        </div>
         <div>
           <div v-for="description in experience.description" :key="description">
             {{ description }}
