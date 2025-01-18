@@ -3,8 +3,8 @@
 <template>
   <Section>
     <div>
-      <div class="text-4xl font-bold">Jos Sebastian</div>
-      <div class="text-2xl font-semibold">Computer Engineer</div>
+      <h1 class="text-4xl font-bold">Jos Sebastian</h1>
+      <h2 class="text-2xl font-semibold">Computer Engineer</h2>
 
       <div class="hidden">
         <div>Education</div>
