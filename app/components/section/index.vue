@@ -5,10 +5,10 @@ const { title } = defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-col gap-1.5">
+  <div class="flex flex-col">
     <div
       v-if="title"
-      class="bg-[var(--ui-bg)] sticky top-0 uppercase font-bold"
+      class="px-0 py-3 bg-[var(--ui-bg)] sticky top-0 uppercase font-bold"
     >
       {{ title }}
     </div>
