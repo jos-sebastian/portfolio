@@ -1,10 +1,5 @@
 <script lang="ts" setup>
-type Section = {
-  title: string;
-  link: string;
-};
-
-const sections: Section[] = [
+const sections = [
   { title: "About", link: "/" },
   { title: "Education", link: "#education" },
   { title: "Experience", link: "#experience" },

@@ -1,9 +1,4 @@
 <script lang="ts" setup>
-type Skill = {
-  skill: string;
-  subskills: string[];
-};
-
 const skills: Skill[] = [
   {
     skill: "C/C++",

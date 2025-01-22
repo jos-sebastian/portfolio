@@ -1,14 +1,4 @@
 <script lang="ts" setup>
-type Education = {
-  time: {
-    start: string;
-    end: string;
-  };
-  degree: string;
-  discipline: string;
-  school: string;
-};
-
 const educations: Education[] = [
   {
     time: {

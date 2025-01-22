@@ -1,14 +1,4 @@
 <script lang="ts" setup>
-type Experience = {
-  time: {
-    start: string;
-    end: string;
-  };
-  position: string;
-  company: string;
-  description: string;
-};
-
 const experiences: Experience[] = [
   {
     time: {

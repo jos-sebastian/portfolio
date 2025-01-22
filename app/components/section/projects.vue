@@ -1,9 +1,4 @@
 <script lang="ts" setup>
-type Project = {
-  project: string;
-  description: string;
-};
-
 const projects: Project[] = [
   {
     project: "Path Tracer",
