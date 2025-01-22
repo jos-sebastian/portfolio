@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const about = portfolio.about;
+
 const sections = [
   { title: "About", link: "/" },
   { title: "Education", link: "#education" },
@@ -12,10 +14,8 @@ const sections = [
   <Section>
     <div class="flex flex-col gap-12">
       <div>
-        <h1 class="text-4xl font-bold md:text-5xl">
-          <NuxtLink to="/">Jos Sebastian</NuxtLink>
-        </h1>
-        <h2 class="text-2xl font-semibold md:text-3xl">Computer Engineer</h2>
+        <h1 class="text-4xl font-bold md:text-5xl">{{ about.name }}</h1>
+        <h2 class="text-2xl font-semibold md:text-3xl">{{ about.title }}</h2>
       </div>
 
       <div
