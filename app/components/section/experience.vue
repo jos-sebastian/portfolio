@@ -6,7 +6,7 @@ type Experience = {
   };
   position: string;
   company: string;
-  description: string[];
+  description: string;
 };
 
 const experiences: Experience[] = [
@@ -17,13 +17,8 @@ const experiences: Experience[] = [
     },
     position: "Mathematics Tutor",
     company: "Texas A&M University",
-    description: [
-      "Facilitated student mastery of mathematics by tutoring on topics ranging from algebra to calculus.",
-      "Enhanced learning outcomes through customized lesson plans tailored to individual student goals.",
-      "Fostered academic growth by regularly assessing student progress and providing constructive feedback.",
-      "Elevated student engagement by incorporating interactive activities to reinforce mathematical concepts.",
-      "Promoted independent learning by developing an online course platform with relevant resources.",
-    ],
+    description:
+      "Provided tutoring to university students on a wide range of math topics, from algebra to calculus.",
   },
 ];
 </script>
@@ -43,11 +38,7 @@ const experiences: Experience[] = [
         <span> · </span>
         <span class="inline-block italic">{{ experience.company }}</span>
 
-        <div>
-          <div v-for="description in experience.description" :key="description">
-            {{ description }}
-          </div>
-        </div>
+        <p>{{ experience.description }}</p>
       </div>
     </div>
   </Section>

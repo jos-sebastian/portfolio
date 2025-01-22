@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="flex flex-col gap-1.5 md:py-24">
+  <div class="flex flex-col gap-6 md:py-24">
     <SectionEducation />
     <SectionExperience />
     <SectionSkills />
