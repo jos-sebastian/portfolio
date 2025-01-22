@@ -4,3 +4,7 @@
 @theme {
   --font-sans: "Inter";
 }
+
+html {
+  @apply scroll-smooth;
+}
