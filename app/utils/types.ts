@@ -1,3 +1,9 @@
+export type About = {
+  name: string;
+  title: string;
+  description: string;
+};
+
 export type Education = {
   time: {
     start: string;
@@ -26,4 +32,12 @@ export type Skill = {
 export type Project = {
   project: string;
   description: string;
+};
+
+export type Portfolio = {
+  about: About;
+  education: Education[];
+  experiences: Experience[];
+  skills: Skill[];
+  projects: Project[];
 };

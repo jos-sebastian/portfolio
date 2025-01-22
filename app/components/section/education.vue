@@ -1,15 +1,5 @@
 <script lang="ts" setup>
-const educations: Education[] = [
-  {
-    time: {
-      start: "August 2021",
-      end: "May 2025",
-    },
-    degree: "Bachelor of Science",
-    discipline: "Computer Engineering",
-    school: "Texas A&M University",
-  },
-];
+const educations = portfolio.education;
 </script>
 
 <template>

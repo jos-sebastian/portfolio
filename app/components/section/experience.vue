@@ -1,16 +1,5 @@
 <script lang="ts" setup>
-const experiences: Experience[] = [
-  {
-    time: {
-      start: "August 2021",
-      end: "May 2025",
-    },
-    position: "Mathematics Tutor",
-    company: "Texas A&M University",
-    description:
-      "Provided tutoring to university students on a wide range of math topics, from algebra to calculus.",
-  },
-];
+const experiences = portfolio.experiences;
 </script>
 
 <template>

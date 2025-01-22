@@ -1,21 +1,5 @@
 <script lang="ts" setup>
-const projects: Project[] = [
-  {
-    project: "Path Tracer",
-    description:
-      "Developed a high-fidelity path tracing renderer to accurately simulate light physics, modeling global illumination to generate photorealistic images.",
-  },
-  {
-    project: "Graphics Engine",
-    description:
-      "Created a real-time graphics engine featuring physically-based rendering, emulating complex scenes with realistic lighting, shadows, and materials.",
-  },
-  {
-    project: "Personal Library",
-    description:
-      "Developed a full-stack, cross-platform application to efficiently track, manage, and organize personal book collections for desktop, mobile, and web platforms.",
-  },
-];
+const projects = portfolio.projects;
 </script>
 
 <template>
