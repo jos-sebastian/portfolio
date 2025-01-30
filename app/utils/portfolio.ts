@@ -25,7 +25,7 @@ const experiences: Experience[] = [
     position: "Mathematics Tutor",
     company: "Texas A&M University",
     description:
-      "Provided tutoring to university students on a wide range of math topics, from algebra to calculus.",
+      "Provided tutoring to university students on a variety of math topics, ranging from algebra to calculus.",
   },
 ];
 
@@ -68,17 +68,17 @@ const projects: Project[] = [
   {
     project: "Path Tracer",
     description:
-      "Developed a high-fidelity path tracing renderer to accurately simulate light physics, modeling global illumination to generate photorealistic images.",
+      "Developed a high-fidelity path tracing renderer to generate photorealistic images, modeling global illumination by accurately simulating the physics of light.",
   },
   {
     project: "Graphics Engine",
     description:
-      "Created a real-time graphics engine featuring physically-based rendering, emulating complex scenes with realistic lighting, shadows, and materials.",
+      "Developed a real-time graphics engine featuring physically-based rendering, emulating scenes with realistic lighting, shadows, and materials.",
   },
   {
     project: "Personal Library",
     description:
-      "Developed a full-stack, cross-platform application to efficiently track, manage, and organize personal book collections for desktop, mobile, and web platforms.",
+      "Developed a full-stack cross-platform application to efficiently organize personal collections of books or other kinds of media for desktop, mobile, and web platforms.",
   },
 ];
 
