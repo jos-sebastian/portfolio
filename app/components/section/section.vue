@@ -5,7 +5,7 @@ const { title } = defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div class="flex h-full w-full flex-col">
     <h3
       v-if="title"
       :id="title.toLowerCase()"
