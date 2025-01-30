@@ -5,10 +5,10 @@ const projects = portfolio.projects;
 <template>
   <Section title="Projects">
     <div class="flex flex-col gap-1.5">
-      <div v-for="project in projects" :key="project.project">
+      <SectionItem v-for="project in projects" :key="project.project">
         <div class="font-bold">{{ project.project }}</div>
         <p>{{ project.description }}</p>
-      </div>
+      </SectionItem>
     </div>
   </Section>
 </template>

@@ -5,7 +5,7 @@ const educations = portfolio.education;
 <template>
   <Section title="Education">
     <div class="flex flex-col gap-1.5">
-      <div
+      <SectionItem
         v-for="education in educations"
         :key="education.school + education.degree + education.discipline"
       >
@@ -20,7 +20,7 @@ const educations = portfolio.education;
           <span> · </span>
           <span class="inline-block italic">{{ education.school }}</span>
         </div>
-      </div>
+      </SectionItem>
     </div>
   </Section>
 </template>
