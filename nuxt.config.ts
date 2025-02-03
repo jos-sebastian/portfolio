@@ -5,6 +5,12 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  app: {
+    head: {
+      title: "Jos Sebastian",
+    },
+  },
+
   modules: ["@nuxt/ui"],
 
   css: ["~/assets/css/main.css"],
