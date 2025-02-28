@@ -15,7 +15,7 @@ const sections = [
     <div class="flex justify-normal md:justify-center">
       <div class="flex h-fit w-fit flex-col gap-12">
         <div>
-          <h1 class="text-4xl font-bold md:text-5xl">{{ about.name }}</h1>
+          <h1 class="text-4xl font-bold md:text-6xl">{{ about.name }}</h1>
           <h2 class="text-2xl font-semibold md:text-3xl">{{ about.title }}</h2>
         </div>
 
@@ -26,7 +26,6 @@ const sections = [
             v-for="section in sections"
             :key="section.title"
             :to="section.link"
-            class="hover:underline"
           >
             {{ section.title }}
           </NuxtLink>
