@@ -15,5 +15,8 @@
     "three": "^0.173.0",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@types/three": "^0.173.0"
   }
 }
