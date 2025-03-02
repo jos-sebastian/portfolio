@@ -33,6 +33,7 @@ onMounted(() => {
 
   const composer = new EffectComposer(renderer);
   const pixelation = new RenderPixelatedPass(6, scene, camera);
+  pixelation.pixelSize = 4;
   composer.addPass(pixelation);
   const pass = new OutputPass();
   composer.addPass(pass);
