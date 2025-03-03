@@ -1,10 +1,25 @@
 <script lang="ts" setup>
+const art = useArt();
+const progress = art.progress;
+watch(
+  () => progress.value,
+  (value) => {
+    if (value === 1) {
+      setTimeout(() => {
+        show.value = true;
+      }, 1);
+    }
+  }
+);
+
+const show = ref(true);
 const dots = [".", ".", "."];
 </script>
 
 <template>
   <div
-    class="fixed -z-30 h-full w-full flex justify-center items-center text-6xl font-semibold"
+    class="fixed z-30 h-full w-full flex justify-center items-center text-6xl font-semibold bg-white"
+    v-if="!show"
   >
     <span>Loading</span>
     <span

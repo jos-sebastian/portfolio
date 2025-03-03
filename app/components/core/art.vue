@@ -1,12 +1,14 @@
 <script lang="ts" setup>
 import * as THREE from "three";
-
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPixelatedPass } from "three/addons/postprocessing/RenderPixelatedPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
-const canvas = ref<HTMLCanvasElement>();
+const art = useArt();
+const canvas = art.canvas;
+const progress = art.progress;
 
 onMounted(() => {
   const clock = new THREE.Clock();
@@ -41,6 +43,19 @@ onMounted(() => {
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.autoRotate = true;
   controls.autoRotateSpeed = 1;
+
+  const manager = new THREE.LoadingManager();
+  manager.onStart = function (url, item, items) {
+    progress.value = item / items;
+  };
+  manager.onProgress = function (url, item, items) {
+    progress.value = item / items;
+  };
+  manager.onLoad = function () {
+    progress.value = 1;
+  };
+
+  const loader = new GLTFLoader(manager);
 
   function resize() {
     aspect = window.innerWidth / window.innerHeight;

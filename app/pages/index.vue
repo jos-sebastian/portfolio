@@ -2,6 +2,7 @@
 
 <template>
   <div class="h-full w-full overflow-auto">
+    <CoreCube />
     <CoreArt />
 
     <div
@@ -12,5 +13,4 @@
     </div>
   </div>
 </template>
-
 <style></style>
