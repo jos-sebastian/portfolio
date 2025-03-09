@@ -19,14 +19,8 @@ const sections = [
           <h2 class="text-2xl font-semibold md:text-3xl">{{ about.title }}</h2>
         </div>
 
-        <div
-          class="flex flex-col gap-1.5 text-sm font-semibold uppercase not-md:hidden"
-        >
-          <NuxtLink
-            v-for="section in sections"
-            :key="section.title"
-            :to="section.link"
-          >
+        <div class="flex flex-col gap-1.5 text-sm font-semibold uppercase not-md:hidden">
+          <NuxtLink v-for="section in sections" :key="section.title" :to="section.link">
             {{ section.title }}
           </NuxtLink>
         </div>

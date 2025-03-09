@@ -2,7 +2,7 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-sans: "Pixelify Sans"
+  --font-sans: "Pixelify Sans";
 }
 
 html {

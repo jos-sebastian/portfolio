@@ -9,7 +9,7 @@ watch(
         show.value = true;
       }, 1);
     }
-  }
+  },
 );
 
 const show = ref(true);
@@ -18,7 +18,7 @@ const dots = [".", ".", "."];
 
 <template>
   <div
-    class="fixed z-30 h-full w-full flex justify-center items-center text-6xl font-semibold bg-white"
+    class="fixed z-30 flex h-full w-full items-center justify-center bg-white text-6xl font-semibold"
     v-if="!show"
   >
     <span>Loading</span>
