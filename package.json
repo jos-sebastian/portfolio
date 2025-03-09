@@ -7,7 +7,9 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "prepare": "nuxt prepare"
+    "prepare": "nuxt prepare",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "dependencies": {
     "@nuxt/ui": "^3.0.0-alpha.12",
@@ -17,6 +19,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@types/three": "^0.173.0"
+    "@types/three": "^0.173.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }
