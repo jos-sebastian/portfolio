@@ -2,15 +2,15 @@
 
 <template>
   <div class="h-full w-full overflow-auto">
-    <CoreCube />
     <CoreArt />
 
     <div
-      class="absolute flex flex-col gap-6 p-3 sm:p-9 md:flex-row md:gap-12 md:px-18 md:py-0"
+      class="absolute flex h-fit w-full flex-col items-center justify-normal md:flex-row md:items-start md:justify-center"
     >
-      <CoreLeft class="h-full w-full md:sticky md:top-0 md:items-center" />
-      <CoreRight class="h-full w-full md:static md:top-0 md:items-start" />
+      <CoreLeft class="h-full min-h-fit w-full max-w-96 md:sticky md:top-0" />
+      <CoreRight class="h-full min-h-fit w-full max-w-144 md:static md:top-0" />
     </div>
   </div>
 </template>
+
 <style></style>
