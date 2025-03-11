@@ -15,7 +15,7 @@ const sections = [
     <div
       class="flex h-screen w-full items-center justify-center md:items-baseline md:py-24 md:pr-6 md:pl-12"
     >
-      <div class="flex h-fit w-fit flex-col gap-9">
+      <div class="flex h-fit w-fit flex-col gap-9" id="hero">
         <div class="text-center md:text-left">
           <h1 class="text-5xl font-bold md:text-6xl">{{ about.name }}</h1>
           <h2 class="text-3xl font-semibold md:text-3xl">{{ about.title }}</h2>
