@@ -12,7 +12,7 @@ watch(
   },
 );
 
-const show = ref(true);
+const show = ref(false);
 const dots = [".", ".", "."];
 </script>
 

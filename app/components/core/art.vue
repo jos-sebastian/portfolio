@@ -7,6 +7,7 @@ import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
 const art = useArt();
 const canvas = art.canvas;
+const progress = art.progress;
 
 onMounted(() => {
   const clock = new THREE.Clock();
@@ -114,6 +115,7 @@ onMounted(() => {
 
     if (!setup) {
       setup = true;
+      progress.value = 1;
       point.position.copy(cube.position);
       point.position.x += 0.5;
       point.position.y += 3;
