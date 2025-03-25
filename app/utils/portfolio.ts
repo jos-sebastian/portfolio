@@ -19,6 +19,16 @@ const educations: Education[] = [
 const experiences: Experience[] = [
   {
     time: {
+      start: "January 2025",
+      end: "May 2025",
+    },
+    position: "Student Researcher",
+    company: "Texas A&M University",
+    description:
+      "Conducted research on tumor segmentation in ultrasound images using machine learning to assist in diagnosis.",
+  },
+  {
+    time: {
       start: "August 2021",
       end: "May 2025",
     },

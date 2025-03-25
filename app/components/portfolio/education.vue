@@ -4,7 +4,7 @@ const educations = portfolio.education;
 
 <template>
   <Section title="Education">
-    <div class="flex flex-col gap-1.5">
+    <div class="flex flex-col gap-3">
       <SectionItem
         v-for="education in educations"
         :key="education.school + education.degree + education.discipline"

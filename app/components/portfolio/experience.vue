@@ -4,7 +4,7 @@ const experiences = portfolio.experiences;
 
 <template>
   <Section title="Experience">
-    <div class="flex flex-col gap-1.5">
+    <div class="flex flex-col gap-3">
       <SectionItem
         v-for="experience in experiences"
         :key="experience.company + experience.position"
