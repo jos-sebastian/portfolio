@@ -57,7 +57,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="container" class="fixed -z-30 h-full w-full">
-    <canvas class="h-full w-full" />
+  <div id="container" class="fixed -z-30 h-full w-full bg-white dark:bg-black">
+    <canvas class="h-full w-full bg-white dark:bg-black" />
   </div>
 </template>
