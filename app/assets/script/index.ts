@@ -2,7 +2,7 @@ import { Color } from "./color";
 import { Simulation } from "./simulation";
 import type { Config } from "./types";
 
-class WebGLFluidEnhanced {
+class FluidSimulation {
   private container: HTMLElement;
   private simulation: Simulation;
   constructor(container: HTMLElement = document.body) {
@@ -173,4 +173,4 @@ class WebGLFluidEnhanced {
 }
 
 export * from "./config";
-export default WebGLFluidEnhanced;
+export default FluidSimulation;

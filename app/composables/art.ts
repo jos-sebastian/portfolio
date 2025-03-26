@@ -1,9 +1,9 @@
 export const useArt = () => {
-  const canvas = ref<HTMLCanvasElement>();
   const progress = useState<number>("progress", () => 0);
+  const mode = useState<string>("mode", () => "");
 
   return {
-    canvas,
     progress,
+    mode,
   };
 };

@@ -18,7 +18,7 @@ const dots = [".", ".", "."];
 
 <template>
   <div
-    class="fixed z-30 flex h-full w-full items-center justify-center bg-white text-6xl font-semibold"
+    class="fixed z-30 flex h-full w-full items-center justify-center bg-white text-6xl font-semibold dark:bg-black"
     v-if="!show"
   >
     <span>Loading</span>
