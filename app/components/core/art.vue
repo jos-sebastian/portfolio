@@ -19,7 +19,7 @@ onMounted(() => {
   simulation.setConfig({
     pressure: 0.5,
     splatRadius: 0.75,
-    brightness: 0.025,
+    brightness: art.mode.value === "dark" ? 0.1 : 0.05,
     backgroundColor: art.mode.value === "dark" ? "#000000" : "#ffffff",
     bloom: false,
     sunrays: false,
@@ -35,6 +35,7 @@ onMounted(() => {
     if (art.mode.value !== colormode.value) {
       art.mode.value = colormode.value;
       simulation.setConfig({
+        brightness: art.mode.value === "dark" ? 0.1 : 0.05,
         backgroundColor: art.mode.value === "dark" ? "#000000" : "#ffffff",
       });
     }
@@ -47,7 +48,7 @@ onMounted(() => {
       const y = rectangle.top + rectangle.height / 2;
       const dx = (Math.random() * 2 - 1) * 15;
       const dy = (Math.random() * 2 - 1) * 15;
-      simulation.splatAtLocation(x, y, dx, dy, "#8000ff");
+      simulation.splatAtLocation(x, y, dx, dy, "#312c85");
     }
     requestAnimationFrame(animate);
   };
