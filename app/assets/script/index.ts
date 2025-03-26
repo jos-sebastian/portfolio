@@ -7,11 +7,6 @@ class WebGLFluidEnhanced {
   private simulation: Simulation;
   constructor(container: HTMLElement = document.body) {
     this.container = container;
-    this.container.style.outline = "none";
-    this.container.style.position = "relative";
-    this.container.style.display = "flex";
-    this.container.style.justifyContent = "center";
-    this.container.style.alignItems = "center";
 
     this.simulation = new Simulation(container);
   }
@@ -49,10 +44,12 @@ class WebGLFluidEnhanced {
   ) {
     if (!this.simulation.hasStarted) return;
 
-    const normalizedX = x / this.simulation.canvas.width;
+    const normalizedX = x / this.simulation.canvas.clientWidth;
     const normalizedY = 1.0 - y / this.simulation.canvas.clientHeight;
 
-    let color = HEXColor ? Color.HEXtoRGB(HEXColor) : undefined;
+    let color = HEXColor
+      ? Color.generateColor([HEXColor], this.simulation.brightness)
+      : undefined;
 
     if (!color) {
       color = Color.generateColor(
@@ -61,9 +58,9 @@ class WebGLFluidEnhanced {
       );
     }
 
-    color.r *= 10.0;
-    color.g *= 10.0;
-    color.b *= 10.0;
+    color.r *= 1.0;
+    color.g *= 1.0;
+    color.b *= 1.0;
 
     this.simulation.splat(normalizedX, normalizedY, dx, dy, color);
   }

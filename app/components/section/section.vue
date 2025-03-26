@@ -9,7 +9,7 @@ const { title } = defineProps<{
     <h3
       v-if="title"
       :id="title.toLowerCase()"
-      class="top-0 px-0 py-3 text-xl font-bold uppercase md:text-2xl"
+      class="top-0 h-fit w-fit px-0 py-3 text-xl font-bold uppercase md:text-2xl"
     >
       {{ title }}
     </h3>
