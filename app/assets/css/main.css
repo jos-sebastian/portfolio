@@ -8,3 +8,11 @@
 html {
   @apply scroll-smooth;
 }
+
+.light ::selection {
+  @apply bg-[#c8c8fa];
+}
+
+.dark ::selection {
+  @apply bg-[#1e1e73];
+}

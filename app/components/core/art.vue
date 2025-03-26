@@ -7,10 +7,6 @@ colormode.preference = "system";
 const art = useArt();
 art.mode.value = colormode.value;
 
-console.log(colormode.preference);
-console.log(colormode.value);
-console.log(art.mode.value);
-
 let simulation: FluidSimulation;
 onMounted(() => {
   const container = document.getElementById("container")!;
