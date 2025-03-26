@@ -7,7 +7,7 @@ watch(
     if (value === 1) {
       setTimeout(() => {
         show.value = true;
-      }, 1);
+      }, 100);
     }
   },
 );
