@@ -10,9 +10,9 @@ html {
 }
 
 .light ::selection {
-  @apply bg-[#c8c8fa];
+  @apply bg-black text-white;
 }
 
 .dark ::selection {
-  @apply bg-[#1e1e73];
+  @apply bg-white text-black;
 }
