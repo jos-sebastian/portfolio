@@ -1,7 +1,8 @@
 const about: About = {
   name: "Jos Sebastian",
   title: "Computer Engineer",
-  description: "",
+  description:
+    "My work focuses on the intersection of software, hardware, and computer graphics. I enjoy exploring how computer engineering can be used to bridge the gap between science and art.",
 };
 
 const educations: Education[] = [
