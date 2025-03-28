@@ -23,7 +23,7 @@ const experiences: Experience[] = [
       end: "May 2025",
     },
     position: "Student Researcher",
-    company: "Texas A&M University",
+    company: "Texas A&M University College of Engineering",
     description:
       "Conducted research on tumor segmentation in ultrasound images using machine learning to assist in diagnosis.",
   },
@@ -42,7 +42,7 @@ const experiences: Experience[] = [
 const skills: Skill[] = [
   {
     skill: "C++",
-    subskills: ["OpenGL", "GLSL", "Vulkan", "CUDA"],
+    subskills: ["OpenGL", "Vulkan", "GLSL", "CUDA"],
   },
   {
     skill: "Python",
